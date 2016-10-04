@@ -1,2 +1,0 @@
-- Next step is to add a file 'CNAME' containing "blog.mickeypash.me"
-- Then go and change your DNS records at https://www.namecheap.com/support/search.aspx?q=
