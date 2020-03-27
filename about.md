@@ -7,9 +7,9 @@ title: About
   Hey you found me! I'm Mickey Pashov!👋 
 </p>
 
-I'm a developer living in London. I moved here about 2 years ago from bonnie Scotland!
+I'm a developer living in London. I moved here about 2 years ago from bonnie Scotland!🏴󠁧󠁢󠁳󠁣󠁴󠁿
 
-I moved to join an early-stage [fast-growing startup](https://techcrunch.com/2019/09/23/customer-marketing-platform-ometria-raises-21m-series-b-round-led-by-octopus-ventures/) called (Ometria)[https://ometria.com].
+I moved to join an early-stage [fast-growing startup](https://techcrunch.com/2019/09/23/customer-marketing-platform-ometria-raises-21m-series-b-round-led-by-octopus-ventures/) called [Ometria](https://ometria.com).
 There I met loads of great people and got to learn about and build cool things!
 There is a laundry list of technologies I got to touch but the highlights include [Python](https://python.org) 🐍 , 
 Kubernetes, AWS and most recently [Snowflake](https://www.snowflake.com/) ❄️ .
@@ -28,7 +28,3 @@ I was later awarded a vacation scholarship at the [School of Information Retriev
 best practices in software development.
 
 It all started for me in Sofia, Bulgaria where I used to play around on my friend's computers!
-
-<!-- </div> -->
-
-
