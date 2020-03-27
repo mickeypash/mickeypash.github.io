@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<div class="page">
+<!-- <div class="page"> -->
   <h1 class="page-title">About</h1>
 
 <p class="message">
@@ -32,6 +32,6 @@ best practices in software development.
 
 It all started for me in Sofia, Bulgaria where I used to play around on my friend's computers!
 
-</div>
+<!-- </div> -->
 
 
