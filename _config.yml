@@ -11,9 +11,9 @@ relative_permalinks: true
 # Setup
 title:               ./mickey.sh
 tagline:             '--fun'
-description:         'on a journey'
+description:         'A man on the run 🏃; a rollin' stone 👨‍🎤, a superstar ⭐️ but I stay on the move. <a href="https://twitter.com/mickeypash" target="_blank">@mickeypash</a>'
 url:                 http://mickey.sh
-baseurl:             /
+baseurl:             ''
 paginate:            5
 
 # About/contact
