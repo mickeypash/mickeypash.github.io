@@ -3,6 +3,9 @@ layout: page
 title: About
 ---
 
+<div class="page">
+  <h1 class="page-title">About</h1>
+
 <p class="message">
   Hey you found me! I'm Mickey Pashov!👋 
 </p>
@@ -28,3 +31,7 @@ I was later awarded a vacation scholarship at the [School of Information Retriev
 best practices in software development.
 
 It all started for me in Sofia, Bulgaria where I used to play around on my friend's computers!
+
+</div>
+
+
