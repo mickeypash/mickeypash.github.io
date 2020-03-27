@@ -1,5 +1,6 @@
 # Dependencies
-highlighter:         rouge
+markdown:            rdiscount
+highlighter:         pygments
 
 # Permalinks
 #
