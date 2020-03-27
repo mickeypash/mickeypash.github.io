@@ -4,27 +4,27 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey you found me! I'm Mickey Pashov!👋 
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I'm a developer living in London. I moved here about 2 years ago from bonnie Scotland!
 
-There are currently two themes built on Poole:
+I moved to join an early-stage [fast-growing startup](https://techcrunch.com/2019/09/23/customer-marketing-platform-ometria-raises-21m-series-b-round-led-by-octopus-ventures/) called (Ometria)[https://ometria.com].
+There I met loads of great people and got to learn about and build cool things!
+There is a laundry list of technologies I got to touch but the highlights include [Python](https://python.org) 🐍 , 
+Kubernetes, AWS and most recently [Snowflake](https://www.snowflake.com/) ❄️ .
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Before that, I worked for one of the [**biggest banks in the world**](https://www.jpmorganchase.com/corporate/investor-relations/document/2d96e1cf-0805-4cd6-82e9-82dfd00a3dba.pdf) - [JPMorgan Chase](https://www.jpmorganchase.com/) 🏦 .
+This was my foray into enterprise software engineering! I started working on some old-school monitoring using Java and 
+moved into the Cloud, building Python microservices and learning the ins and outs of Unix and infrastructure.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Going back even further I was a student at the [University of Glasgow](https://www.gla.ac.uk/), the [**fourth oldest university in the UK**](https://en.wikipedia.org/wiki/Ancient_university)!
 
-## Setup
+I started my journey at the university doing a BSc in Psychology Hons with a combination of Computing Science.
+At the time of my graduation, Glasgow was ranked [**top 5 in the UK for psychology**](https://www.theguardian.com/education/table/2013/jun/04/university-guide-psychology). My focus at the time was cognitive psychology, and 
+[computational neuroscience](https://www.gla.ac.uk/researchinstitutes/neurosciencepsychology/teaching/undergraduate/) where I scored in the **85th percentile of exam results**.
 
-Some fun facts about the setup of this project include:
+I was later awarded a vacation scholarship at the [School of Information Retrieval](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/). Followed by an MSc in Information Technology where I got to learn all about 
+best practices in software development.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+It all started for me in Sofia, Bulgaria where I used to play around on my friend's computers!
