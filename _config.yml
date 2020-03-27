@@ -11,7 +11,7 @@ permalink:           pretty
 title:               ./mickey.sh
 tagline:             '--fun'
 description:         'on a journey'
-url:                 http://mickey
+url:                 http://mickey.sh
 baseurl:             /
 paginate:            5
 
