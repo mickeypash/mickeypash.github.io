@@ -1,5 +1,4 @@
 # Dependencies
-markdown:            redcarpet
 highlighter:         rouge
 
 # Permalinks
@@ -8,10 +7,10 @@ highlighter:         rouge
 permalink:           pretty
 
 # Setup
-title:               Mickey's Blog
-tagline:             'Just another blog'
-description:         'Exploring things'
-url:                 http://mickeypash.github.io
+title:               ./mickey.sh
+tagline:             '--fun'
+description:         'on a journey'
+url:                 http://mickey
 baseurl:             /
 paginate:            5
 
@@ -22,4 +21,4 @@ author:
   email:             pashov.m@gmail.com
 
 # Custom vars
-version:             1.0.0
+version:             1.0.1
