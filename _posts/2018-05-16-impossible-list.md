@@ -31,5 +31,4 @@ Go to a Drake concert (March 2017)
 Go to festival (August 2017) - WeWork Summer Camp
 
 Go to a wedding (March 2018)
-
-Move to London
+Move to London (August 2018)
