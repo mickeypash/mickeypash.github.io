@@ -8,7 +8,7 @@ relative_permalinks: true
 # Setup
 title:               ./mickey.sh
 tagline:             '--fun'
-description:         'A man on the run 🏃; a rollin' stone 👨‍🎤, a superstar ⭐️ but I stay on the move. <a href="https://twitter.com/mickeypash" target="_blank">@mickeypash</a>'
+description:         ''
 url:                 http://mickey.sh
 baseurl:             ''
 paginate:            5
