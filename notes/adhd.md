@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Dealing with ADHD as a Developer
 ---
 [As seen on StackOverflow](https://softwareengineering.stackexchange.com/questions/116730/programming-with-add-adhd?page=1&tab=votes#tab-top)
