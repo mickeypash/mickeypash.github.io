@@ -27,4 +27,15 @@ At the time of my graduation, Glasgow was ranked [**top 5 in the UK for psycholo
 I was later awarded a vacation scholarship at the [School of Information Retrieval](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/). Followed by an MSc in Information Technology where I got to learn all about 
 best practices in software development.
 
-It all started for me in Sofia, Bulgaria where I used to play around on my friend's computers!
+But it all started for me in Sofia, Bulgaria where I used to play around on my friend's computers!
+
+<!-- ## Projects -->
+
+## Contact
+<ul>
+    <li><a href="mailto:28h28i@m28i28c28k28e28y.28s28h" onmouseover="this.href=this.href.replace(/28/g, '')">Email</a></li>
+    <li><a href="http://twitter.com/mickeypash">Twitter</a></li>
+    <li><a href="http://github.com/mickeypash">Github</a></li>
+    <li><a href="http://telegram.me/mickeypash">Telegram</a></li>
+    <li><a href="https://keybase.io/mickeypash">Keybase</a></li>
+</ul>
