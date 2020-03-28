@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               ./mickey.sh
 tagline:             '--fun'
-description:         'Mickey Pashov's blog about things he finds interesting, such as Software Engineering, Python, Golang, Kubernetes'
+description:         'Mickey Pashov\'s has blog about things he finds interesting, such as Software Engineering, Python, Golang, Kubernetes'
 url:                 http://mickey.sh
 baseurl:             ''
 paginate:            5
