@@ -1,0 +1,1 @@
+# VCR-pytest vs HTTPretty

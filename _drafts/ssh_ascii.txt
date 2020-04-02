@@ -1,0 +1,21 @@
+
+
+packet length
++------------------+ encrypted
+| padding amount   |
+| payload          |
+| padding (nonce)  |
++------------------+
+
+
+compress if you want using zlib
+
++----+  +----+
+|    |  |    |
++----+  +----+
++-----------------------------------------+
+|                 TCP                     |
++-----------------------------------------+
+
+
+Channel between connections (connection)
