@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script>
+      // TODO Learn how to write JavaScript
+      // Also fix that hero section :facepalm:
+      const DAYS_IN_THE_WEEK = 7;
+      const current = moment();
+      let progress = Math.round(current.isoWeekday() / DAYS_IN_THE_WEEK * 100);
+      document.querySelector("progress").setAttribute("value", progress);
+    </script>
   </head>
   <body>
     <div class="level">
-    <section class="section level-item has-text-centered">
-    <div class="container">
+      <section class="section level-item has-text-centered">
+        <div class="container">
 
         <section class="hero is-danger is-bold">
           <div class="hero-body">
@@ -27,162 +35,165 @@
           </div>
         </section>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p><strong>Days left of the week</strong></p>
-                <progress class="progress is-large is-danger" value="15" max="100">15%</progress>
+        <section id="chapter">
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p><strong>Days left of the week</strong></p>
+                  <progress class="progress is-large is-danger" value="15" max="100">15%</progress>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong >Reliable, Scalable, and Maintainable Applications</strong> (3/30 - 4/5)
-                </p>
+          <div class="box has-background-success">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong class="has-text-white">Reliable, Scalable, and Maintainable Applications</strong> (3/30 - 4/5)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box has-background-danger has-text-white">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                  <strong class="has-text-white">Data Models and Query Languages</strong> (4/6 - 4/13)
-                </p>
+          <div class="box has-background-danger has-text-white">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                    <strong class="has-text-white">Data Models and Query Languages</strong> (4/6 - 4/13)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Storage and Retrieval (4/14 - 4/19)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Storage and Retrieval (4/14 - 4/19)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Encoding and Evolution (4/20 - 4/26)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Encoding and Evolution (4/20 - 4/26)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Replication (4/27 - 5/3)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Replication (4/27 - 5/3)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Partitioning (5/4 - 5/10)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Partitioning (5/4 - 5/10)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  The Trouble with Distributed Systems (5/18 - 5/24)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    The Trouble with Distributed Systems (5/18 - 5/24)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Consistency and Consensus (5/25 - 5/31)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Consistency and Consensus (5/25 - 5/31)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Batch Processing (6/1 - 6/7)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Batch Processing (6/1 - 6/7)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Stream Processing (6/8 - 6/14)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Stream Processing (6/8 - 6/14)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  Transactions (5/11 - 5/17)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    Transactions (5/11 - 5/17)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  The Future of Data Systems (6/15 - 6/21)
-                </p>
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    The Future of Data Systems (6/15 - 6/21)
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
+        </section>
+
         </div>
-    </div>
-  </section>
+      </section>
     </div>
   </body>
 </html>
