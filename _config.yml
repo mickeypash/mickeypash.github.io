@@ -5,7 +5,7 @@ permalink:           pretty
 title:               ./mickey.sh
 tagline:             '--fun'
 description:         'Mickey Pashovs blog about things he finds interesting, such as Software Engineering, Python, Golang, Kubernetes.'
-url:                 http://mickey.sh
+url:                 https://mickey.sh
 baseurl:             ''
 paginate:            5
 

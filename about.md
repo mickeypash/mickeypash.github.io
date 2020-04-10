@@ -35,8 +35,8 @@ But it all started for me in Sofia, Bulgaria where I used to play around on my f
 <ul>
     <li><a href="mailto:28h28i@m28i28c28k28e28y.28s28h" onmouseover="this.href=this.href.replace(/28/g, '')">Email</a></li>
     <li><a href="https://www.linkedin.com/in/mickeypash/">LinkedIn</a></li>
-    <li><a href="http://twitter.com/mickeypash">Twitter</a></li>
-    <li><a href="http://github.com/mickeypash">Github</a></li>
-    <li><a href="http://telegram.me/mickeypash">Telegram</a></li>
+    <li><a href="https://twitter.com/mickeypash">Twitter</a></li>
+    <li><a href="https://github.com/mickeypash">Github</a></li>
+    <li><a href="https://telegram.me/mickeypash">Telegram</a></li>
     <li><a href="https://keybase.io/mickeypash">Keybase</a></li>
 </ul>
