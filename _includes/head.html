@@ -17,55 +17,25 @@
   <meta name="twitter:site" content="@chronotope" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
-  {% if page.title %}
-    <!-- Article specific OG data -->
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="{{page.date}}" />
+    {% if page.title %}
+      <!-- Article specific OG data -->
+      <meta property="og:type" content="article" />
+      <meta property="article:published_time" content="{{page.date}}" />
     {% if page.modified %}
       <meta property="article:modified_time" content="{{page.modified}}" />
     {% endif %}
-    <meta property="article:author" content="https://twitter.com/mickeypash" />
-    <meta property="article:publisher" content="https://twitter.com/mickeypash" />
-    <meta property="article:section" content="{{page.vertical}}" />
-    {% for tag in page.categories %}
-      <meta property="article:tag" content="{{tag}}" />
-    {% endfor %}
-  <meta name="keywords" content="{{page.categories | join: ', '}}" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@chronotope" />
-    <meta name="twitter:title" content="{{page.title}}" />
-  {% if page.ogimagenull %}
-    <!-- no og image -->
-  {% elsif page.ogimage %}
-    <meta property="og:image" content="{{page.ogimage}}" />
-      <meta name="twitter:image" content="{{page.ogimage}}" />
-      <meta property="og:image:width" content="600" />
-      <meta property="og:image:height" content="315" />
-  {% elsif page.image %}
-      <meta property="og:image" content="{{page.image}}" />
-      <meta name="twitter:image" content="{{page.image}}" />
-    {% else %}
-      <meta property="og:image" content="https://41.media.tumblr.com/709bb3c371b9924add351bfe3386e946/tumblr_nxdq8uFdx81qzocgko1_1280.jpg" />
-      <meta name="twitter:image" content="https://41.media.tumblr.com/709bb3c371b9924add351bfe3386e946/tumblr_nxdq8uFdx81qzocgko1_1280.jpg" />
+      <meta property="article:author" content="https://twitter.com/mickeypash" />
+      <meta property="article:publisher" content="https://twitter.com/mickeypash" />
+      <meta property="article:section" content="{{page.vertical}}" />
+      <meta name="twitter:creator" content="@chronotope" />
     {% endif %}
   
-<!--   {% if page.jsonld %}
-    {% include {{page.jsonld}}.html %}
-  {% else %}
-    {% include postJSONLD.html %}
-  {% endif %} -->
-
-  {% else %}
     <!-- OG data for homepage -->
     <meta property="og:image" content="https://41.media.tumblr.com/709bb3c371b9924add351bfe3386e946/tumblr_nxdq8uFdx81qzocgko1_1280.jpg" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{site.title}}" />
     <meta name="twitter:image" content="https://41.media.tumblr.com/709bb3c371b9924add351bfe3386e946/tumblr_nxdq8uFdx81qzocgko1_1280.jpg" />
-  <!-- {% include homeJSONLD.html %} -->
-  {% endif %}
-
 
   <title>
     {% if page.title == "Home" %}
