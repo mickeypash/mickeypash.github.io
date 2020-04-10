@@ -3,6 +3,8 @@ layout: post
 title: Automated my Quora answer
 ---
 
+![quora](https://cdn.dribbble.com/users/502238/screenshots/2099895/quora-logo.png)
+
 [Answer can be found here.](https://www.quora.com/Why-do-all-bootstrap-websites-look-the-same-and-how-can-you-be-different/answer/Mickey-Pash)
 
 **Disclaimer** I generally think this is not advisable as this just reduces the quality of what has the potential to be a very good learning resource.

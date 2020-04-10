@@ -2,7 +2,7 @@
 layout: post
 title: Tech Lead Anti-patterns
 ---
-![](images/tech-lead.jpg)
+![tech-lead]({{ site.baseurl }}/images/tech-lead.jpg)
 
 Sometime ago I watched a talk on [People First Engineering Management @ Monzo](https://www.youtube.com/watch?v=gNqkHQA7XM0).
 It's full of really interesting and insightful content but my biggest takeaway was the following the tech load anti-patterns.
