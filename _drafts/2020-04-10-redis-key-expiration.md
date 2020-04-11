@@ -72,7 +72,7 @@ To check for an `expire` he checks the "expire hashtable" for a an entry with th
 
 
 
-[KyeDB - Rethinking the Redis Key EXPIRE](https://docs.keydb.dev/blog/2019/10/21/blog-post/)
+[KeyDB - Rethinking the Redis Key EXPIRE](https://docs.keydb.dev/blog/2019/10/21/blog-post/)
 
 [CubeDrone Endiannes](https://www.youtube.com/watch?v=LGH3ND0kP4Q)
 
