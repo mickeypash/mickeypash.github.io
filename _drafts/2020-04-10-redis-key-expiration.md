@@ -4,17 +4,26 @@ title: Redis Key Expiration
 excerpt: There are only two hard things in Computer Science: cache invalidation and naming things.
 ---
 
+![]({{ site.baseurl }}/images/redis.png)
+
+Not too long ago I was tasked with looking into a performance issue with an internal service using Redis.
+At the time I had no exposure to it after some time I identified that the issue might be related to issues with key expiration. As part of my investigation I found this great talk by [@antirez](https://twitter.com/antirez), the creator of Redis, on [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY). This is a short post about my learnings, with links to relevant points in the C code.
+
+## Intro
+Let's start with the basics, Redis stands for Remote Dictionary Server, as the name suggests it is a distributed, in-memory key-value database. It uses a hash table, called `dict` as it's core data structure, where values can be stored as a linked list.
+One of the many features it provides is [EXPIRE](https://redis.io/commands/expire), which sets a timeout for a given key. In other words it allows users to specify how long the keys shoul exist for before being delete. 
+
+In order to make this happen Redis needs to store the expiration information with a `key`. 
+
+The obvious approach is to have the existing data structure support expiry for each `key`. However, this adds unnecessary memory overhead, if only a small subset of keys are set to expire. 
+
+The alternative solution is to have a second hash-table that stores the [expiry information](https://github.com/antirez/redis/blob/b73d87f5e59ae68a2b901fe5a158d6e22840214c/src/server.c#L2747). The image below attempts to illustrate this.
+
 ![redis]({{ site.baseurl }}/images/redis-key-expire.png)
 
-[The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
-
-Redis stores the key-value pairs in a hash-table. Where the value can be a linked-list.
-
-To save space the expiration information is not stored with the `key`.
-There is a second hashtable just for `expires` [](https://github.com/antirez/redis/blob/b73d87f5e59ae68a2b901fe5a158d6e22840214c/src/server.c#L2747). 
-To save memory Redis reuses the pointer for the `key` from the main hashtable.
 
 The time at which a key will expire is set at a unix timestamp.
+To further conserve space, Redis reuses the pointer for the `key` from the primary `dict`, in terms of the expiry, the author also tries to optimize by storing a unix timestamp as a pointer.
 To conserve space it gets stored as a pointer.
 
 This means that if there are no `expires`, the expiration hastable is empty.
@@ -55,7 +64,6 @@ What they would do is listen to the Keyspace notification for [`expired` events]
 
 
 
-
 Redis docs:
 
 Specifically this is what Redis does 10 times per second:
@@ -78,6 +86,5 @@ To check for an `expire` he checks the "expire hashtable" for a an entry with th
 
 
 https://redis.io/commands/expire
-
 
 https://github.com/antirez/redis/blob/b73d87f5e59ae68a2b901fe5a158d6e22840214c/src/expire.c#L123
