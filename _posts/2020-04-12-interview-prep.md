@@ -4,18 +4,10 @@ title: Interview prep
 excerpt: 
 ---
 
-As software engineers our environment is ever changing. Things are moving fast. "Once in a lifetime" events seem to happen every couple of years now. That's why I think one needs to stay sharp and interview at a regular interval.
+As software engineers our environment is ever changing. Things are moving fast. "Once in a lifetime" events seem to happen every couple of years now. That's why I think one needs to stay sharp and interview at regular intervals.
 
 ![prep]({{ site.baseurl }}/images/prep-time-resources.png)
 
-### Github meta resources:
-
-- [Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/cheatsheet/)
-- [Kevin's interview notes](https://github.com/kdn251/Interviews)
-- [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
-- [Awesome Scalability](https://github.com/binhnguyennus/awesome-scalability)
-- [Linux Sysadmin Interview Questions](https://github.com/chassing/linux-sysadmin-interview-questions)
-- [DevOps Interview Questions](https://github.com/DNXLabs/DevOps-Interview-Questions)
 
 ### Hiring platforms:
 - [Otta](https://app.otta.com/sign-up?referral=YnN4YnFP) - my personal favourite. Great companies, great UI/UX, well curated content.
@@ -55,4 +47,13 @@ I love spending my time on Youtube, that's how I get most of my information thes
 - [Gaurav Sen](https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw) - outstanding videos on interview prep and system design. The images in this post are from his video.
 - [Clément Mihailescu (AlgoExpert)](https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g) - his content is also quite good but I've got brand loyalty to Joma and TechLead, they can be a bit more entertaining.
 - [CS Dojo](https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A) - haven't watched his content in a while but he's got some solid explanation videos. Most everyone else has put their explanations behind a paywall.
+
+### Github meta resources:
+
+- [Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/cheatsheet/)
+- [Kevin's interview notes](https://github.com/kdn251/Interviews)
+- [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+- [Awesome Scalability](https://github.com/binhnguyennus/awesome-scalability)
+- [Linux Sysadmin Interview Questions](https://github.com/chassing/linux-sysadmin-interview-questions)
+- [DevOps Interview Questions](https://github.com/DNXLabs/DevOps-Interview-Questions)
 
