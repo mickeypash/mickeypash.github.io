@@ -39,10 +39,13 @@ This will sort of depend on your specialisation. Also they can get quite pricey 
 - [QCon](https://qconlondon.com/) - another massive conference, which I volunteered for.
 
 ### Books and blogs:
-- [Cracking The Coding Interview](https://amzn.to/2Vh2v4M)
+- [Cracking The Coding Interview](https://amzn.to/2Vh2v4M) - this comes highly recommended!
+- [Introduction to Algorithms](https://amzn.to/2RQQRvA) - very famous book but also very dense.
+- [The Algorithm Design Manual](https://amzn.to/2VjqAbi) - popular yet still quite lengthy.
+- [Grokking Algorithms: An illustrated guide for programmers and other curious people](https://amzn.to/2RNGI2N) - very light weight way of learning about algorithms
+
 - [HighScalability Blog](http://highscalability.com/)
 - [Arden Dertat's Programming interview questions](http://www.ardendertat.com/2012/01/09/programming-interview-questions/)
-- [SRE Workbook](https://landing.google.com/sre/workbook/chapters/canarying-releases/)
 
 ### YouTube:
 
@@ -50,6 +53,6 @@ I love spending my time on Youtube, that's how I get most of my information thes
 - [Joma Tech](https://www.youtube.com/channel/UCV0qA-eDDICsRR9rPcnG7tw) - very entertaining and informative
 - [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw) - I used to love his content now I'm a bit more wary of it.
 - [Gaurav Sen](https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw) - outstanding videos on interview prep and system design. The images in this post are from his video.
-- [Clément Mihailescu (AlgoExpert)](https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g)
-- [CS Dojo](https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A)
+- [Clément Mihailescu (AlgoExpert)](https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g) - his content is also quite good but I've got brand loyalty to Joma and TechLead, they can be a bit more entertaining.
+- [CS Dojo](https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A) - haven't watched his content in a while but he's got some solid explanation videos. Most everyone else has put their explanations behind a paywall.
 
