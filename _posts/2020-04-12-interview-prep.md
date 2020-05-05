@@ -6,6 +6,7 @@ excerpt:
 
 As software engineers our environment is ever changing. Things are moving fast. "Once in a lifetime" events seem to happen every couple of years now. That's why I think one needs to stay sharp and interview at regular intervals.
 
+
 ![prep]({{ site.baseurl }}/images/prep-time-resources.png)
 
 
