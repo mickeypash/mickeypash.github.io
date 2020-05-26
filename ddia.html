@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
-    <script>
-      // TODO Learn how to write JavaScript
-      // Also fix that hero section :facepalm:
-      const DAYS_IN_THE_WEEK = 7;
-      const current = moment();
-      let progress = Math.round(current.isoWeekday() / DAYS_IN_THE_WEEK * 100);
-      document.querySelector("progress").setAttribute("value", progress);
-    </script>
   </head>
   <body>
     <div class="level">
@@ -41,7 +33,7 @@
               <div class="media-content">
                 <div class="content">
                   <p><strong>Days left of the week</strong></p>
-                  <progress class="progress is-large is-danger" value="30" max="100"></progress>
+                  <progress class="progress is-large is-danger" value="0" max="100"></progress>
                 </div>
               </div>
             </article>
@@ -196,5 +188,13 @@
       </section>
     </div>
   </body>
+  <script>
+  // TODO Learn how to write JavaScript
+  // Also fix that hero section :facepalm:
+  const DAYS_IN_THE_WEEK = 7;
+  const current = moment();
+  let progress = Math.round(current.isoWeekday() / DAYS_IN_THE_WEEK * 100);
+  document.querySelector("progress").setAttribute("value", progress);
+  </script>
 </html>
 
