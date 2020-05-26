@@ -1,200 +1,150 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DDIA: Progress</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
-  </head>
-  <body>
-    <div class="level">
-      <section class="section level-item has-text-centered">
-        <div class="container">
 
-        <section class="hero is-danger is-bold">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title level-item has-text-centered">
-                Designing Data-Intensive Applications:
-              </h1>
-              <br>
-              <h2 class="subtitle level-item has-text-centered">
-                The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
-              </h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DDIA: Progress</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+</head>
+
+<body>
+  <div class="container" id="app">
+    <section class="hero is-danger is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title level-item has-text-centered">
+            {{title}}
+          </h1>
+          <br>
+          <h2 class="subtitle level-item has-text-centered">
+            {{subtitle}}
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="chapters">
+      <div class="box">
+        <article class="media">
+          <div class="media-content">
+            <div class="content">
+              <p><strong>Days left of the week</strong></p>
+              <progress class="progress is-large is-danger" value="0" max="100"></progress>
             </div>
           </div>
-        </section>
-
-        <section id="chapters">
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p><strong>Days left of the week</strong></p>
-                  <progress class="progress is-large is-danger" value="0" max="100"></progress>
-                </div>
-              </div>
-            </article>
+        </article>
+      </div>
+      <div class="box" v-for="(chapter, index) in chapters" 
+                       :class="{'has-background-grey': chapter.read, 
+                           'has-background-danger': chapter.wip,
+                           'has-text-white': chapter.read || chapter.wip,
+                           'has-background-grey-light': showByIndex === index,
+                           'has-background-primary': active === index}" @mouseover="showByIndex = index" @mouseout="showByIndex = null" @click="active = index">
+        <article class="media">
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong :class="{ 'has-text-white': chapter.read || chapter.wip }">
+                  {{chapter.title}}
+                </strong>
+                {{chapter.dates}}
+              </p>
+            </div>
           </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  let chapters = [{
+      title: 'Reliable, Scalable, and Maintainable Applications',
+      dates: '(3/30 - 4/5)',
+      read: true
+    },
+    {
+      title: 'Data Models and Query Languages',
+      dates: '(4/6 - 4/13)',
+      read: true
+    },
+    {
+      title: 'Storage and Retrieval',
+      dates: '(4/14 - 4/19)',
+      read: true
+    },
+    {
+      title: 'Encoding and Evolution',
+      dates: '(4/20 - 4/26)',
+      read: true
+    },
+    {
+      title: 'Replication',
+      dates: '(4/27 - 5/3)',
+      read: false
+    },
+    {
+      title: 'Partitioning',
+      dates: '(5/4 - 5/10)',
+      read: false
+    },
+    {
+      title: 'The Trouble with Distributed Systems',
+      dates: '(5/18 - 5/24)',
+      read: false
+    },
+    {
+      title: 'Consistency and Consensus',
+      dates: '(5/25 - 5/31)',
+      read: false
+    },
+    {
+      title: 'Batch Processing',
+      dates: '(6/1 - 6/7)',
+      read: false
+    },
+    {
+      title: 'Stream Processing',
+      dates: '(6/8 - 6/14)',
+      read: false
+    },
+    {
+      title: 'Transactions',
+      dates: '(6/11 - 6/17)',
+      wip: true
+    },
+    {
+      title: 'Stream Processing',
+      dates: '(6/8 - 6/14)',
+      read: false
+    },
+    {
+      title: 'The Future of Data Systems',
+      dates: '(6/15 - 6/21)',
+      read: false
+    }
+  ]
+  const app = new Vue({
+    el: '#app',
+    data: {
+      title: 'Designing Data-Intensive Applications:',
+      subtitle: 'The Big Ideas Behind Reliable, Scalable, and Maintainable Systems',
+      chapters: chapters,
+      showByIndex: null,
+      active: null
+    },
+  })
+</script>
+<script>
+// TODO Learn how to write JavaScript
+// Also fix that hero section :facepalm:
+const DAYS_IN_THE_WEEK = 7;
+const current = moment();
+let progress = Math.round(current.isoWeekday() / DAYS_IN_THE_WEEK * 100);
+document.querySelector("progress").setAttribute("value", progress);
 
-          <div class="box has-background-success has-text-white">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong class="has-text-white">Reliable, Scalable, and Maintainable Applications</strong> (3/30 - 4/5)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
+</script>
 
-          <div class="box has-background-success has-text-white">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                    <strong class="has-text-white">Data Models and Query Languages</strong> (4/6 - 4/13)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box has-background-success has-text-white">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Storage and Retrieval (4/14 - 4/19)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box has-background-success has-text-white">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Encoding and Evolution (4/20 - 4/26)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Replication (4/27 - 5/3)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Partitioning (5/4 - 5/10)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    The Trouble with Distributed Systems (5/18 - 5/24)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Consistency and Consensus (5/25 - 5/31)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Batch Processing (6/1 - 6/7)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Stream Processing (6/8 - 6/14)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box has-background-danger has-text-white">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    Transactions (6/11 - 6/17)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    The Future of Data Systems (6/15 - 6/21)
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        </div>
-      </section>
-    </div>
-  </body>
-  <script>
-  // TODO Learn how to write JavaScript
-  // Also fix that hero section :facepalm:
-  const DAYS_IN_THE_WEEK = 7;
-  const current = moment();
-  let progress = Math.round(current.isoWeekday() / DAYS_IN_THE_WEEK * 100);
-  document.querySelector("progress").setAttribute("value", progress);
-  </script>
 </html>
-
