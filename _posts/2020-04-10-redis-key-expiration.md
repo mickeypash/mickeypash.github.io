@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Redis Key Expiration
-excerpt: There are only two hard things in Computer Science: cache invalidation and naming things.
+excerpt: "There are only two hard things in Computer Science: cache invalidation and naming things."
 ---
-
-![redis]({{ site.baseurl }}/images/redis.png)
 
 Not too long ago I was tasked with looking into a performance issue with an internal service using Redis.
 At the time I had no exposure to it after some time I identified that the issue might be related to issues with key expiration. As part of my investigation I found this great talk by [@antirez](https://twitter.com/antirez), the creator of Redis, on [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY). This is a short post about my learnings, with links to relevant points in the C code.
+
+![redis]({{ site.baseurl }}/images/redis.png)
 
 ## Intro
 Let's start with the basics, Redis stands for Remote Dictionary Server, as the name suggests it is a distributed, in-memory key-value database. It uses a hash table, called `dict` as it's core data structure, where values can be stored as a linked list.
