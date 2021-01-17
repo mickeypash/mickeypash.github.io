@@ -3,7 +3,7 @@ permalink:           pretty
 
 # Setup
 title:               ./mickey.sh
-tagline:             '--fun'
+tagline:             '--blog'
 description:         "Mickey Pashov's blog"
 url:                 https://mickey.sh
 baseurl:             ''
@@ -16,4 +16,4 @@ author:
   email:             pashov.m@gmail.com
 
 # Custom vars
-version:             1.0.1
+version:             1.0.2
